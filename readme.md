@@ -7,7 +7,7 @@ By [Joe Ganser](mailto:JKGProfessional@gmail.com)
 
 **Abstract**
 
-Tinder Gold was introduced to the dating app market in August 2017. In this data driven study, analysis is made on the impact Tinder Gold had on the other Tinder products and competition from other dating apps. Data records on purchase receipts were used for this analysis. *This presentation is oriented for business developers and does not contain code. For the scientific, code based analysis please go [here](Technical_doc.ipynb).*
+Tinder Gold was introduced to the dating app market in August 2017. In this data driven study, analysis is made on the impact Tinder Gold had on the other Tinder products and competition from other dating apps. Data records on purchase receipts were used for this analysis. *This presentation is oriented for business developers and does not contain code. For the scientific, code based analysis please go [here](https://github.com/JoeGanser/Tinder_Gold_Competition/blob/master/files/Technical_doc.md).*
 
 **TABLE OF CONTENTS**
 1. [The dating market at a glance](#one)
@@ -168,7 +168,7 @@ Whats most interesting about this plot is that it that both time series are not 
 * *The rise in sales of Tinder Gold shares a predictive causality relation (p=0.01) with a 74% drop in market volume of Tinder Plus between Aug 1 2017 and Sept 30th 2018.*
 * *This is caused by giving people the ability to know who likes them back on the service (Tinder Gold's advantage).*
 * *Market changes in Tinder Plus vs Tinder Gold share a causality relationship upto 17 days prior (p<0.01)*
-* *No significant change was seen in Tinder's top competitor, Okcupid, across the launch date. [See technical document for details](Technical_doc.ipynb).*
+* *No significant change was seen in Tinder's top competitor, Okcupid, across the launch date. [See technical document for details](https://github.com/JoeGanser/Tinder_Gold_Competition/blob/master/files/Technical_doc.md).*
 
 <a id=4.B></a>
 **4.B Evolution of new customer acquisition, repeat purchases and churn instances**
@@ -207,7 +207,7 @@ By examining the evolution of daily instances of repeat purchases and new purcha
 
 As for the evolution of these metrics on Tinder Gold post launch, the follwing graph is available.
 
-*[Figure 6](Technical_doc.ipynb#figure6): Note the dates on the horizontal start at the launch of Tinder Gold. The thicker lines represent the 30 day average, and the faint lines are daily fluctuations. Notice how to the lines tends towards an equilibrium in ratios as time evolves, similar to how Tinder Plus (figure 4) was before the launch date.*
+*Figure 6: Note the dates on the horizontal start at the launch of Tinder Gold. The thicker lines represent the 30 day average, and the faint lines are daily fluctuations. Notice how to the lines tends towards an equilibrium in ratios as time evolves, similar to how Tinder Plus (figure 4) was before the launch date.*
 ![Figure6](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/TinderGoldChurn.png)
 
 <a id=4.C></a>
@@ -234,7 +234,7 @@ We can see quite a change in the revenue per customer after Tinder Gold's launch
 * *Before Tinder Gold, Tinder's CAGR (compounded annual growth rate) was 8.98%. After Tinder Gold, Tinder's CAGR was 17.2%*
     * *Tinder Gold improved Tinder's CAGR by 91.2%*
 * *Tinder Gold took Tinder Plus's customers, and despite a decrease in sales of Tinder Plus, the overall sales of Tinder products increased.*
-* *Okcupid's revenue per customer was evaluated as well, but the results did not indicate significant changes from the Tinder Gold launch. [See the technical documents for those details](Technical_doc.ipynb#Okcupid_revenue).*
+* *Okcupid's revenue per customer was evaluated as well, but the results did not indicate significant changes from the Tinder Gold launch. [See the technical documents for those details](https://github.com/JoeGanser/Tinder_Gold_Competition/blob/master/files/Technical_doc.md).*
 
 <a id=five></a>
 
