@@ -98,7 +98,7 @@ This next figure shows the volume each product took up before and after Tinder G
 
 *Figure 1*
 
-![Figure 1](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/Tinder_gold_before_after_breakdown.png)
+![Figure 1](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/Tinder_gold_before_after_breakdown.png)
 
 *Note* Products such as elitesingles,twoo, howaboutwe, and jdate were omitted because their percentages were very small.
 
@@ -154,13 +154,13 @@ In this section I present the key results. There are three fundamental results d
 In this next plot, we can see the evolution of market volume of Tinder Plus versus Tinder Gold. Market volume, is defined as the percentage of sales (by number of items sold, not revenue) in the data attributed to any product on a given day. For example, on 8/1/2017 approximately 80% of all the recorded items sold on that date were Tinder Plus products (this includes the monthly, 3 month, 6 month and 12 month versions of each) (3).
 
 *Figure 2: The darker lines are the 30day average, the faint ones are the daily values.*
-![Figure2](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/Volumne_PlusVsGold.png)
+![Figure2](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/Volumne_PlusVsGold.png)
 
 Below, in Figure 3, we have a scatter of the values in the plot above put against each other, AFTER the Tinder Gold launch date. In the upper left hand corner are the values of the market share of Tinder Plus (y) and Tinder Gold (x) on the Tinder Gold launch date, Aug 1 2017. On the bottom right is the very end of the time series, September 30th, 2018.
 
 *Figure 3: X is the percentage of market volume of Tinder Gold, Y is percentage of market volume of Tinder Plus*
 
-![Figure 3](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/Regression_PlusVsGold.png)
+![Figure 3](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/Regression_PlusVsGold.png)
 
 Whats most interesting about this plot is that it that both time series are not in any way altered to become stationary (i.e. to seperate the trend from the noise). These are the actual daily volume values, not averaged ones. Using a statistical test called the [Augmented Dickey Fuller test](https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test), we see a cointegration of the two time series. Using the [Granger test](https://en.wikipedia.org/wiki/Granger_causality),we can prove a causality relationship between the growth of Tinder Gold and the atrophy of Tinder Plus. By causality, we mean predictive causality in that we can predict the values of Tinder Gold from the values of Tinder Plus. (6)(7)(8)(13)(14)(15)
 
@@ -177,7 +177,7 @@ Using feature engineering, I was able to identify instances in the time series t
 
 With these data points, I could calculate the number of such instances on a given day and compare it to the number of unique users who made purchases on that same day. i.e. for a given product
 
-![ratio](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/ratio_analytics.png)
+![ratio](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/ratio_analytics.png)
 
 *Note that a churn instance may simultaneously be a repeat purchase or a new purchase - but not all three!*
 
@@ -192,14 +192,14 @@ In figure 4 we see the plot of these ratios. So on the Tinder Gold launch date, 
 
 *Figure 4: Note that the churn line (blue) is supposed to end early, because you want to give atleast one business quarter for identifying a churn. The thicker lines are the 30day averages, the faint ones are the daily fluctuations.*
 
-![Figure4](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/TinderPlusChurn.png)
+![Figure4](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/TinderPlusChurn.png)
 
 The change in the blue churn line (see arrow) indicates that for a daily pool of Tinder Plus users, a signficant increase in the fraction of people who churned was noticed after Tinder Gold launched.
 
 By examining the evolution of daily instances of repeat purchases and new purchases of Tinder Plus, we can see a transition there are well.
 
 *Figure 5. These are simply the average daily recorded values of new purchases and repeat purchases of Tinder Plus (not per number of customers ratio). Look at the drop after Tinder Gold launched.*
-![Figure5](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/Tinder_Plus_new_repeat.png)
+![Figure5](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/Tinder_Plus_new_repeat.png)
 
 **We can conclude the following**;
 * *Tinder Plus's number of churns per daily customers increased (the daily fraction) by 77% after Tinder Gold [(Figure 4)](#figurefour)*
@@ -208,7 +208,7 @@ By examining the evolution of daily instances of repeat purchases and new purcha
 As for the evolution of these metrics on Tinder Gold post launch, the follwing graph is available.
 
 *[Figure 6](Technical_doc.ipynb#figure6): Note the dates on the horizontal start at the launch of Tinder Gold. The thicker lines represent the 30 day average, and the faint lines are daily fluctuations. Notice how to the lines tends towards an equilibrium in ratios as time evolves, similar to how Tinder Plus (figure 4) was before the launch date.*
-![Figure6](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/TinderGoldChurn.png)
+![Figure6](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/TinderGoldChurn.png)
 
 <a id=4.C></a>
 **4.C Measuring the change in Tinder's revenue per customer**
@@ -217,7 +217,7 @@ Measuring the performance of individual products such as Tinder Gold and Tinder 
 
 To answer these questions, I decided to calculate a metric that determines the ratio between all the money made by Tinder products on a given day to all the people who purchased Tinder products on that same day;
 
-![rev_customer](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/revenue_per_customer.png)
+![rev_customer](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/revenue_per_customer.png)
 
 **Justification for this metric**
 
@@ -225,7 +225,7 @@ This metric is scallable and allows us to draw conclusions about the population 
 
 *Figure 7: The thick line is the 30day average, the faint ones are the day to day values.*
 
-![Figure 7](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/Tinder_revenue.png)
+![Figure 7](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/Tinder_revenue.png)
 
 We can see quite a change in the revenue per customer after Tinder Gold's launch. Considering the conclusion previously drawn that Tinder Gold caused a change in market volume of Tinder Plus, we can use Occam's razor to conclude that Tinder Gold also caused the increase in revenue seen here (otherwise, we'd have to assume something else caused it).
 
@@ -251,7 +251,7 @@ Here in figure 8 we see the market volume evolution of JDate and JSwipe across T
 
 *Figure 8*
 
-![Figure8](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/files/JDate_JSwipe.png)
+![Figure8](https://raw.githubusercontent.com/JoeGanser/Tinder_Gold_Competition/master/JDate_JSwipe.png)
 
 <a id=six></a>
 **6. Relating the data to user experience studies**
